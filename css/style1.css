@@ -1,0 +1,153 @@
+
+* {
+    margin :0; /*  All the elements have margin of 0 from the top, bottom, left, and right */
+}
+
+/* All the HTML5 new semantic elements (nav header, footer...) sould be 
+displayed as block-level elements (for old browsers that don't support 
+them) , so make sure to follow that rue. */
+
+header,footer,nav,main,video {
+    display : block;
+}
+
+body{
+    color : rgb(248, 248, 248); /* a. Any colour you prefer for the text */
+    background-image: url(../assets/images/dark-wood1.jpg); /* b.A background image, you can use any one from the 7 samples of dark-woodx.jpg. */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px; /* d.  Margin 0 for all the four sides (top, bottom, left, right) */
+}
+
+.container{
+    width : 950px;/* 3)a. The width value can be 950px */
+    margin : 5px auto; /* 3)b.5px margin from top and bottom 
+                            c.The div has to be aligned centered based
+                             in the browser window, idem que margin : 5px auto 5px auto */
+    background-color: rgba(107, 45, 45, 0.578); /* 3)d. Apply any background colour that you prefer */
+}
+
+.content{
+    line-height:1.4em; /* 4)a. the line height of the text should be 1.4em*/
+    padding:10px; /* 4)b. 10px padding to all the sides */
+}
+
+header,nav,footer{
+    background-color: rgba(107, 45, 45, 0.801); /* 5)a. Any Dark/Light background colour*/
+    color:rgb(199, 170, 170); /* 5)b. Any Dark/Light foreground colour (normal font colour)*/
+}
+
+nav > ul{
+    margin:0; /* 6)a.0 margin from all the sides */
+    padding: 5px; /* 6)b. 5px padding from all the sides*/
+}
+
+nav > ul >li{
+    display:inline; /* or even inline-block, 7)a. To be displayed horizontally (Remember that <li> is a block-level element) */
+    margin-right: 40px; /*7)b. Adding margin of 40px to the right of each list item  */
+    text-transform: uppercase; /*7)c.All the navigation items should be displayed as Uppercase */
+}
+
+
+nav>ul>li>a:link, ol>li>a:link{ /*8)a. ... with the links of the page About S.U*/
+    color:rgb(255, 209, 149); 
+    text-decoration: none;
+}
+
+
+nav>ul>li>a:visited{ /*8)b. */
+    color : rgb(137, 76, 76);
+}
+
+nav>ul>li>a:active{ /*8)c. */
+    color : rgb(194, 175, 48)
+}
+
+nav>ul>li>a:hover{ /*8)d. */
+    color:rgb(141, 131, 68)
+}
+
+
+h1,h2,h3{ 
+    margin:10px; /*10)a. To have margin of 10px for all the sides  */
+    text-transform: uppercase; /*10)b.  With Uppercase letters  */
+    color: rgb(112, 191, 226); /*10)c. Different dark/light colour  */
+}
+
+
+.img-centre{
+    display: block; /* 11)a.*/
+    margin: 5px auto; /* 11)b.*/
+    padding: 2px; /* 11)c.*/
+    
+}
+
+audio,video{ /* 12) a and b */
+    display: block; 
+    margin: 10px auto; 
+}
+
+table{
+    width:800px; /*13)a. */
+    margin: 10px auto; /*13)b. */
+    border-collapse: collapse; /*13)c. */
+}
+
+td,th{
+    border: solid 5px rgb(205, 189, 189); /*14)a. */
+    padding: 2px 5px; /*14)b. */
+    background-color: rgb(150, 116, 116); /*14)c. */
+}
+
+
+th, tfoot>tr>td{
+    text-transform: uppercase; /*15)a. */
+    background-color: rgb(124, 90, 90); /*15)b. */
+    color: rgb(255, 209, 149); /*15)c. */
+}
+
+td{ /* 16)*/
+    font-weight:bold;
+}
+
+footer{ 
+    font-size: 80%; /*17)a.*/
+    text-align: center; /* 17)b.*/
+    padding: 1px 0px; /* 17)c. */
+}
+
+iframe{
+    margin: 10px; /* 18)a.*/
+    display: block; /* 18)b.*/
+    margin: auto; /* 18)b.*/
+}
+
+fieldset{
+    width:500px; /* 19)a.*/
+    margin:20px auto; /* 19)b.*/
+    border :rgb(205, 189, 189); /* 19)c.*/
+    border-radius: 5px; 
+    background-color: rgb(124, 90, 90); /* 19)d.*/
+} 
+
+legend{
+    font-style: italic; /* 20)a.*/
+    color: rgb(255, 209, 149); /* 20)b.*/
+    background-color: rgb(89, 58, 58); /* 20)b.*/
+    margin:0px 10px; /* 20)c.*/
+    padding:0px 5px; /* 20)d.*/
+    border-radius: 10px; /* 20)e.*/
+}
+
+.submit>input{
+    border : rgb(124, 90, 90); /* 21)a.*/
+    border-radius: 5px; 
+    padding: 5px;  /* 21)b.*/
+    background-color: rgb(89, 58, 58); /* 21)c.*/
+    color: rgb(255, 209, 149); /* 21)d.*/
+}
+
+.submit>input:hover{
+    background-color: rgba(89, 58, 58, 0.066); /* 22)a.*/
+    color: rgb(255, 145, 0); /* 22)a.*/
+    cursor: pointer; /* 22)b.*/
+}

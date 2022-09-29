@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spa website">
+    <meta name="author" content="Elsa PAYA">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Contact S.U.</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/su_banner.gif" alt="Website Main Banner" title="Umbrella Website Banner">
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <form method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstname">First Name*</label>
+                    <input id="firstname" name="Firstname" type="text" maxlength="25" required >
+                    <br>
+                    <label for="lastname">Last Name*</label>
+                    <input id="lastname" name="Lastname" type="text" maxlength="25" required >
+                    <br>
+                    <label for="email">Email*</label>
+                    <input id="email" name="Email" type="text" maxlength="25" required >
+                    <br>
+                    <label>Please select the music genre(s) that you like:</label>
+                    <br>
+                    <input type="checkbox" name="genre" id ="check1" value="classic" >
+                    <label for="check1">Classic</label>
+                    <br>
+                    <input type="checkbox" name="genre" id="check2" value="jazz" >
+                    <label for="check2">Jazz</label>
+                    <br>
+                    <input type="checkbox" name="genre" id="check3" value="blues" > 
+                    <label for="check3">Blues</label>
+                    <br>
+                    <input type="checkbox" name="genre" id="check4" value="intru" > 
+                    <label for="check4">Instrumental</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="selection">How did you hear about us?</label>
+                    <select name="source" id="selection">
+                        <option value="web">Our Website</option>
+                        <option value="fr">Friends</option>
+                        <option value="tv">TV Advertising</option>
+                        <option value="oth">Other</option>
+                    </select>
+                    <br>
+                    <label> Would you recommend us to your friends?</label>
+                    <input type="radio" name="recommend" id="btn1" checked value="yes" > 
+                    <label for="btn1">Yes</label>
+                    <input type="radio" name="recommend" id="btn2" value="no" > 
+                    <label for="btn2">No</label>
+                    <input type="radio" name="recommend" id="btn3" value="maybe" > 
+                    <label for="btn3">Maybe</label>
+
+                    <label for="text1">Your request:</label>
+                    <br>
+                    <textarea name="aboutyou" id="text1" cols="40" rows="5">
+                    </textarea>
+                    <br>
+                    <input type="checkbox" name="signme" id="check5" checked value="sign" > 
+                    <label for="check5">Sign me up for email updates</label>
+                    <div class="submit">
+                        <input type="submit" value="Register" >
+                    </div>
+                </fieldset>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.86333320859!2d-79.39195658450166!3d43.671812079120656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sThe+Spa+at+Four+Seasons+Hotel+Toronto!5e0!3m2!1ssl!2sca!4v1519231700735"
+                title="GoogleMap" width="600" height="450" allowfullscreen>
+            </iframe>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Elsa PAYA  - All
+                rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
